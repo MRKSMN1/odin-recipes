@@ -1,0 +1,155 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #1f2937;
+    color: #f9faf8;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #1f2937;
+  color: #f9faf8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+.nav-links a {
+  color: #e5e7eb;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hero section with overlay */
+.hero {
+  position: relative;
+  background-color: #1f2937;
+  color: #f9faf8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.hero-images {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-images img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+/* Sections */
+section {
+  padding: 60px 80px;
+  margin-bottom: 90px;
+}
+section img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+.section-button {
+  background-color: #3883f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.section-button:hover {
+  background-color: #2a6fd6;
+}
+
+/* About Section */
+.about {
+  background-color: #1f2937;
+    color: #f9faf8;
+  text-align: center;
+}
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-content,
+  .hero-images {
+    max-width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-button {
+    width: 100%;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+}
