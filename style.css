@@ -5,21 +5,37 @@ body {
     padding: 20px;
 }
 
-h1{
-    color: darkblue;
+h1 {
+  color: gold;
+  font-size: 45px;
+  text-align: center;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.gallery figure {
+  
+  max-width: 300px;
+  text-align: center;
+  margin: 0;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 figcaption {
-    font-weight: bold;
-    margin-top: 8px;
+  font-weight: bold;
+  margin-top: 8px;
 }
+
 
 @media (max-width: 600px) {
     .gallery {
@@ -34,10 +50,12 @@ figcaption {
     body {
         padding: 10px;
     }
-
+  
+   @media (max-width: 600px) {
     h1 {
         font-size: 28px;
     }
+}
 
 
 
